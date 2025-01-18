@@ -10,6 +10,7 @@ header {
 
 body {
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
 .topbar {
@@ -21,11 +22,19 @@ body {
   left: 0; /* Fijado a 0px desde la parte izquierda */
   padding: 12px 12px 12px 12px;
   width: calc(100% - 24px); /* Ocupa todo el ancho */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
   padding: 0px 12px 36px 12px;
   width: calc(100% - 24px); /* Ocupa todo el ancho */
+}
+
+.portfolios-container {
+  background-color: white;
+  height: calc(100vh - 96px);
+  width: calc(100% - 24px);
+  padding: 48px 12px 48px 12px;
 }
 
 .button-cta {
@@ -34,12 +43,59 @@ body {
   height: 43px;
   border-radius: 6px;
   border-color: #ef7d00;
+  border: 0;
 }
 
 .content-cta {
   margin: 0 auto;
   padding: 0px 0px 12px 0px;
-  font-family: "Roboto", sans-serif;
+}
+
+.header-portfolio {
+  margin-bottom: 24px;
+}
+
+.content-portfolio {
+  margin: 0 auto;
+  padding: 12px 0px 0px 0px;
+}
+
+.gallery-portfolio {
+  border-radius: 7.52px;
+  background-color: #333333;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: fit-content;
+}
+
+.gallery-portfolio img {
+  display: flex;
+  align-items: flex-end; /* Align to the bottom */
+  padding-left: calc((100% - 296px) / 2);
+  padding-right: calc((100% - 296px) / 2);
+}
+
+.gallery-text {
+  margin: 0 auto;
+  padding: 6px 0 0 24px;
+}
+
+.slide-portfolio {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.button-portfolio {
+  width: 48px;
+  height: 48px;
+  padding: 0 6px 0 6px;
+  margin-top: 12px;
+  background-color: #333333;
+  color: white;
+  border-radius: 100%;
+  border: 0;
+  font-size: 20px;
 }
 
 .logo {
@@ -60,6 +116,10 @@ body {
   color: white;
 }
 
+.font-color-light-black {
+  color: #333333;
+}
+
 .font-size-16 {
   font-size: 16px;
 }
@@ -70,8 +130,4 @@ body {
 
 .font-size-40 {
   font-size: 40px;
-}
-
-.aux {
-  background-color: gray;
 }
