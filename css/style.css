@@ -1,43 +1,74 @@
-header {
-  background-image: url("../src/backgrounds/test-landing-id3\ 1.jpg");
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-body {
+* {
+  box-sizing: border-box;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
 
-.topbar {
-  display: flex; /* Make the container a flexbox */
-  align-items: center; /* Center vertically */
-  justify-content: space-between; /* Distribute space evenly between items */
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 0px 12px 0px 12px;
+}
+
+.landing__topbar {
   position: fixed;
-  top: 0; /* Fijado a 0px desde la parte superior */
-  left: 0; /* Fijado a 0px desde la parte izquierda */
+  display: inline-block;
+  text-align: center;
   padding: 12px 12px 12px 12px;
-  width: calc(100% - 24px); /* Ocupa todo el ancho */
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.header-container {
-  padding: 0px 12px 36px 12px;
+.landing__esat-logo {
+  width: 91px;
+  height: 30px;
+  margin-right: calc((100% - 265px) / 2);
+}
+
+.landing__esat-brand {
+  width: 150px;
+  height: 70px;
+  margin-left: calc((100% - 265px) / 2);
+}
+
+.landing__header {
+  background-image: url("../src/backgrounds/test-landing-id3\ 1.jpg");
+  background-position: center;
+  padding-bottom: 12px;
+  padding-top: calc(100vh - 287px);
+}
+
+.landing__header--content {
+  padding-bottom: 36px;
   width: calc(100% - 24px); /* Ocupa todo el ancho */
 }
 
-.portfolios-container {
-  background-color: white;
-  height: calc(100vh - 96px);
-  width: calc(100% - 24px);
-  padding: 48px 12px 48px 12px;
+.landing__gallery--shape {
+  width: 366px;
+  height: 366px;
 }
 
-.button-cta {
+.landing__gallery--buttons {
+  margin-right: 0px;
+  margin-left: calc(100% - 100.453px)
+}
+
+.landing__gallery--shape p {
+  margin-left: 12px;
+}
+
+.landing__gallery--shape img {
+  margin-left: calc((100% - 296px) / 2); ;
+  margin-right: calc((100% - 296px) / 2);
+  margin-top: calc(100% - 340px);
+}
+
+.landing__custom-projects__image {
+  margin-left: calc((100% - 205px) / 2);
+  margin-right: calc((100% - 205px) / 2);
+}
+
+.button--primary {
   background-color: #ef7d00;
   width: 178px;
   height: 43px;
@@ -46,51 +77,10 @@ body {
   border: 0;
 }
 
-.content-cta {
-  margin: 0 auto;
-  padding: 0px 0px 12px 0px;
-}
-
-.header-portfolio {
-  margin-bottom: 24px;
-}
-
-.content-portfolio {
-  margin: 0 auto;
-  padding: 12px 0px 0px 0px;
-}
-
-.gallery-portfolio {
-  border-radius: 7.52px;
-  background-color: #333333;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  height: fit-content;
-}
-
-.gallery-portfolio img {
-  display: flex;
-  align-items: flex-end; /* Align to the bottom */
-  padding-left: calc((100% - 296px) / 2);
-  padding-right: calc((100% - 296px) / 2);
-}
-
-.gallery-text {
-  margin: 0 auto;
-  padding: 6px 0 0 24px;
-}
-
-.slide-portfolio {
-  display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-}
-
-.button-portfolio {
+.button--secondary {
   width: 48px;
   height: 48px;
   padding: 0 6px 0 6px;
-  margin-top: 12px;
   background-color: #333333;
   color: white;
   border-radius: 100%;
@@ -98,36 +88,73 @@ body {
   font-size: 20px;
 }
 
-.logo {
-  width: 91px;
-  height: 30px;
+.margin--top-small {
+  margin-top: 12px;
 }
 
-.brand {
-  width: 150px;
-  height: 70px;
+.margin--top-medium {
+  margin-top: 24px;
 }
 
-.font-color-esat {
-  color: #ef7d00;
+.margin--top-big {
+  margin-top: 48px;
 }
 
-.font-color-white {
+.padding--top-small {
+  padding-top: 12px;
+}
+
+.padding--top-medium {
+  padding-top: 24px;
+}
+
+.padding--top-big {
+  padding-top: 48px;
+}
+
+.border-radius--small {
+  border-radius: 6px;
+}
+
+.text--white {
   color: white;
 }
 
-.font-color-light-black {
+.text--orange {
+  color: #ef7d00;
+}
+
+.text--black {
   color: #333333;
 }
 
-.font-size-16 {
+.text--size-16 {
   font-size: 16px;
 }
 
-.font-size-20 {
+.text--size-20 {
   font-size: 20px;
 }
 
-.font-size-40 {
+.text--size-40 {
   font-size: 40px;
 }
+
+.text--align-center {
+  text-align: center;
+}
+
+.background--black {
+  background-color: #333333;
+}
+
+.background--white {
+  background-color: #EEF0F5;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* fixed SO FAR */
+

@@ -7,56 +7,71 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="topbar">
-      <img src="./src/svg/Logo-ESAT-white-Orange.svg" alt="" class="logo" />
-      <img
+    <div class="landing__topbar">
+      <img class="landing__esat-logo" src="./src/svg/Logo-ESAT-white-Orange.svg" alt="" />
+      <img class="landing__esat-brand"
         src="./src/svg/id3-brand-white-metro-withoutlogo-ajust.svg"
         alt=""
-        class="brand"
       />
     </div>
-    <header>
-      <div class="header-container">
-        <h3 class="font-color-esat content-cta font-size-20">
+    <header class="container landing__header">
+      <div class="landing__header--content">
+        <p class="text--orange text--size-20">
           Posgrado especializado en UX/UI y front-end
-        </h3>
-        <h1 class="font-color-white content-cta font-size-40">
+        </p>
+        <h1 class="text--white">
           Trabaja como UX/UI y Front-end Developer
         </h1>
-        <h3 class="font-color-white content-cta font-size-20">
+        <p class="text--white text--size-20">
           Aprende desde cero todo lo que necesitas para convertirte en el perfil
           digital más demandado en el mercado
-        </h3>
-        <button class="font-color-white button-cta font-size-16">
+        </p>
+        <button class="text--white text--size-16 button--primary margin--top-medium">
           ¡Quiero empezar!
         </button>
       </div>
     </header>
     <main>
-      <section class="portfolios-container">
-        <div class="header-portfolio">
-          <h1 class="font-color-light-black content-portfolio font-size-40">
+      <section class="container">
+        <div class="padding--top-big">
+          <h1 class="text--black text--size-40">
             Diseña
           </h1>
-          <h1 class="font-color-esat content-portfolio font-size-40">
+          <h1 class="text--orange text--size-40">
             Desarrolla
           </h1>
-          <p class="font-color-light-black content-portfolio font-size-20">
+          <p class="text--black text--size-20, margin--top-small">
             Crearás tu primer proyecto durante el postgrado y pondrás en
             práctica tus aprendizajes en un entorno que simula la producción de
             trabajo profesional
           </p>
         </div>
-        <div class="gallery-portfolio">
-          <p class="font-color-esat gallery-text">
-            <small>Student work</small>
-          </p>
-          <p class="font-color-white font-size-16 gallery-text">Alex Dasi</p>
-          <img src="./src/pics/camisola.png" alt="" />
+        <div class="margin--top-big fit-content">
+          <div class="landing__gallery--shape background--black border-radius--small padding--top-small">
+            <p class="text--orange">
+              <small>Student work</small>
+            </p>
+            <p class="text--white">Alex Dasi</p>
+            <img src="./src/pics/camisola.png" alt="" />
+          </div>
+          <div class="fit-content landing__gallery--buttons">
+            <button class="button--secondary margin--top-small">&lt;</button>
+            <button class="button--secondary margin--top-small">&gt;</button>
+          </div>
         </div>
-        <div class="slide-portfolio">
-          <button class="button-portfolio">&lt;</button>
-          <button class="button-portfolio">&gt;</button>
+      </section>
+      <section class="container background--white">
+        <div class="padding--top-big">
+          <h1 class="text--black text--size-40 text--align-center">
+            Proyectos
+          </h1>
+          <h1 class="text--orange text--size-40 text--align-center">
+            Personalizados
+          </h1>
+          <p class="text--black text--size-20, margin--top-small text--align-center">
+            Desde la idea hasta el desarrollo del final del producto
+          </p>
+          <img class="landing__custom-projects__image margin--top-big" src="./src/pics/[Mockup] iPhone 14.png" alt="">
         </div>
       </section>
     </main>
